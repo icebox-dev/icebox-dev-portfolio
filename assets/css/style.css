@@ -1093,6 +1093,9 @@ Services Style
   border-radius: 10px;
   border-top-right-radius: 50px;
   transition: all 0.3s;
+
+  min-height: 300px;
+  max-height: 300px;
 }
 
 .service-item .icon {
@@ -1194,8 +1197,8 @@ About Us
   margin-bottom: 30px;
 }
 
-.about-us .box-item h4 a {
-  font-size: 20px;
+.about-us .box-item h6 a {
+  font-size: 18px;
   font-weight: 700;
   margin-top: 8px;
   color: #2a2a2a;
@@ -1206,7 +1209,7 @@ About Us
   margin-bottom: 0px;
 }
 
-.about-us .box-item:hover h4 a {
+.about-us .box-item:hover h6 a {
   color: #4b8ef1;
 }
 
@@ -1747,7 +1750,7 @@ footer #search button:hover {
 
 footer .copyright-text p {
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 0px;
   color: #fff;
 }
