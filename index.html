@@ -770,7 +770,7 @@
             </div>
           </div>
           <div class="col-lg-8 offset-lg-2">
-            <form id="search" action="#" method="GET">
+            <form id="search" action="" method="post">
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                   <div class="col-lg-8 col-sm-8">
@@ -812,7 +812,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                   
-                  <textarea placeholder="Message..." name="" id=""></textarea>
+                  <textarea placeholder="Message..." name="message" id=""></textarea>
                 </div>
               </div>
               <div class="row">
@@ -905,5 +905,25 @@
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/popup.js"></script>
     <script src="assets/js/custom.js"></script>
+    
+    <script>
+      $("#search").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbxxZFA-IZc8MU2APRDrZp1xm0cYA_Bgyw7b_Smm6BwKeJ0auaNBv9tOglsWtA8iOlnOYg/exec",
+              data:$("#search").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
   </body>
 </html>
