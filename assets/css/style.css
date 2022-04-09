@@ -1665,7 +1665,8 @@ footer #search input::placeholder {
   color: #fff;
 }
 
-footer #search input {
+footer #search input,
+footer #search textarea {
   font-size: 15px;
   color: #fff;
   outline: none;
@@ -1675,7 +1676,14 @@ footer #search input {
   border-bottom: 1px solid #fff;
   width: 100%;
 }
+footer #search textarea {
+  resize: none;
 
+  height: 138px;
+}
+footer #search textarea::placeholder {
+  color: #fff;
+}
 footer #search button {
   height: 46px;
   border-radius: 23px;
@@ -2164,7 +2172,8 @@ responsive
     margin-top: 45px;
     margin-bottom: 20px;
   }
-  footer #search input {
+  footer #search input,
+  footer #search textarea {
     border: 1px solid #eee;
     color: #afafaf;
     background-color: #fff;
@@ -2172,11 +2181,15 @@ responsive
     margin-bottom: 15px;
     padding: 0px 30px;
   }
+  footer #search textarea {
+    padding: 10px 30px;
+  }
   footer #search button {
     background-color: #fff;
     color: #4b8ef1;
   }
-  footer #search input::placeholder {
+  footer #search input::placeholder,
+  footer #search textarea::placeholder {
     color: #2a2a2a;
   }
   .header-area .main-nav .logo h4 {
