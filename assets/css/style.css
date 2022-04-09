@@ -2178,7 +2178,7 @@ responsive
   footer #search input,
   footer #search textarea {
     border: 1px solid #eee;
-    color: #afafaf;
+    color: #2a2a2a;
     background-color: #fff;
     border-radius: 23px;
     margin-bottom: 15px;
@@ -2193,7 +2193,7 @@ responsive
   }
   footer #search input::placeholder,
   footer #search textarea::placeholder {
-    color: #2a2a2a;
+    color: #afafaf;
   }
   .header-area .main-nav .logo h4 {
     font-size: 30px;
